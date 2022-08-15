@@ -1,38 +1,118 @@
+body {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
+.btn {
+  margin-left: 20px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  padding: 10px 25px;
+  cursor: pointer;
+  border: 1px solid rgb(194, 60, 165);
+  transition: 0.7s;
+}
+
+.btn:hover {
+  background-color: rgb(194, 60, 165);
+  border: 1px solid aquamarine;
+}
+
+.placeholder {
+  background-color: aquamarine;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  border: 1px solid rgb(194, 60, 165);
+}
+
+.square {
+  background-color: rgb(194, 60, 165);
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.direction {
+  margin-top: 20px;
+  padding: 10px;
+  width: 90vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(194, 60, 165);
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+
+.down {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+
+}
+.down:last-child {
+  animation: fadein 0.7s ease-in;
+}
+
+.left {
+  transform: rotate(90deg) !important;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+
+}
+.left:last-child {
+  animation: fadein 0.7s ease-in;
+}
+
+.up {
+  transform: rotate(180deg) !important;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+
+}
+.up:last-child {
+  animation: fadein 0.7s ease-in;
+}
+
+.right {
+  transform: rotate(-90deg) !important;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  
+}
+.right:last-child {
+  animation: fadein 0.7s ease-in;
+}
+
+@keyframes fadein {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+
