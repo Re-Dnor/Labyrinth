@@ -4,4 +4,5 @@
 
 ### Gameplay:
 
-In the beginning of game user reseive start point and roud scenario with arrow directions
+In the beginning of game user receive start point and route scenario with arrow directions.<br>
+To win the game user should choose correct finish point
